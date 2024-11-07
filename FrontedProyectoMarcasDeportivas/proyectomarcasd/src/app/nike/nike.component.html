@@ -1,0 +1,38 @@
+<div class="card bg-light mb-3 my-5 card-hover" style="width: 100%; max-width: 800px; margin: auto; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); transition: transform 0.3s, box-shadow 0.3s;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" class="card-img-top" alt="Nike Logo" style="width: 30%; height: auto; display: block; margin: 20px auto; max-height: 150px;">
+  <div class="card-header text-white bg-dark">Nike</div>
+  <div class="card-body">
+    <h5 class="card-title">Listado Nike</h5>
+    <div class="my-2 text-left">
+      <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/nike/form']">Crear Nike</button>
+      </div>
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Id Producto</th>
+          <th>Nombre</th>
+          <th>Fecha Fundación</th>
+          <th>Origen</th>
+          <th>Ingresos Anuales</th>
+          <th>Empleados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let indice of nike">
+          <td>{{indice.id}}</td>
+          <td>{{indice.nombre}}</td>
+          <td>{{indice.fecha_fundacion}}</td>
+          <td>{{indice.origen}}</td>
+          <td>{{indice.ingresos_anuales}}</td>
+          <td>{{indice.empleados}}</td>
+          <td>
+            <button type="button" name="editar" [routerLink]="['/nike/form', indice.id]" class="btn btn-primary">Editar</button>
+          </td>
+          <td>
+            <button type="button" name="eliminar" (click)="delete(indice)" class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

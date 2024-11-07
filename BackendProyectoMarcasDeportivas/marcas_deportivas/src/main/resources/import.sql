@@ -1,0 +1,3 @@
+INSERT INTO nike (nombre, fecha_fundacion, empleados, ingresos_anuales, origen) VALUES ("Nike", "1964", "38700", "75900", "Estados Unidos")
+INSERT INTO  adidas (nombre, fecha_fundacion, empleados, ingresos_anuales, origen) VALUES ("Adidas", "1949", "23900", "62000", "Alemania")
+INSERT INTO puma (nombre, fecha_fundacion, empleados, ingresos_anuales, origen) VALUES ("Puma", "1948", "5700", "14000", "Alemania")
