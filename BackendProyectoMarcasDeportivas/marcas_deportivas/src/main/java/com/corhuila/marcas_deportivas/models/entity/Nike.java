@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+// Tabla para Nike
 @Entity
 @Table(name="nike")
 public class Nike implements Serializable {

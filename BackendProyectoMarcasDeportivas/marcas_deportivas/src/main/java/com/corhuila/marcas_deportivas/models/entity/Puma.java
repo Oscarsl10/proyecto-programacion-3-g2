@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+// Tabla para Puma
 @Entity
 @Table(name="puma")
 public class Puma implements Serializable {
